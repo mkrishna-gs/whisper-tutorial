@@ -38,18 +38,5 @@ Optional flags:
 uv run python main.py /path/to/video.mp4 --audio-out extracted_audio.wav --model turbo
 ```
 
-## Repository Conventions
-
-- `.python-version` is committed on purpose to keep Python version consistent across machines.
-- Generated/large media files are ignored in `.gitignore`:
-	- extracted audio (for example `extracted_audio.wav`)
-	- input videos (`*.mp4`, `*.mov`, `*.mkv`, `*.avi`, `*.webm`, `*.m4v`)
-
-## Troubleshooting
-
-- If you see `module 'whisper' has no attribute 'load_model'`, install the correct package:
-
-```bash
-uv add openai-whisper
-```
+Enjoy coding, keep building, and let your ideas be heard.
 
