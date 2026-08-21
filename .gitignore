@@ -8,3 +8,14 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Generated audio outputs
+extracted_audio.wav
+
+# Input video files
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v

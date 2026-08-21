@@ -1,7 +1,7 @@
 [project]
 name = "whisper-tutorial"
 version = "0.1.0"
-description = "Add your description here"
+description = "Extract audio from video and transcribe it with OpenAI Whisper"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
