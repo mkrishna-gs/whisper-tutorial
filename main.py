@@ -53,7 +53,9 @@ def main() -> None:
     print(f"Audio extracted to: {audio_path}")
 
     model = whisper.load_model(args.model)
-    result = model.transcribe(str(audio_path))
+    # FP16 is only valid on CUDA devices; disable it on CPU to avoid warnings.
+    use_fp16 = str(model.device).startswith("cuda")
+    result = model.transcribe(str(audio_path), fp16=use_fp16)
 
     print(f"Detected language: {result.get('language', 'unknown')}")
     print(result["text"])
